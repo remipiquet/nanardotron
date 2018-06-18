@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Nanard-O-tron</title>
+</head>
+
+<body>
+    
+    <h1>Nanard-O-tron</h1>
+    <p></p>
+    
+    <p>
+        Quel type de synopsis voulez vous générer ? <br />
+        <input type="radio" name="typeCitation1" value="typeCitation1" id="typeCitation1" /> <label for="typeCitation1">Plutôt comme ci</label><br />
+        <input type="radio" name="typeCitation2" value="typeCitation2" id="typeCitation2" /> <label for="typeCitation2">Ou plutôt comme ça</label><br />
+    </p>
+
+        <p>
+            <label for="nbSynopsis">Combien de synopsis voulez vous générer ?</label><br />
+            <select name="nbSynopsis" id="nbSynopsis">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </p>
+    
+    
+    <button onclick="SynopsisManager()">Génération de Synopsis</button>
+    
+
+    
+        <p></p>
+    
+       <div id="synopsisDisplay">
+        <!-- le synospis 1 est affiché ici --> 
+    </div> 
+    
+        <p>---</p>
+    
+
+    
+    <p></p>
+    
+<button onclick="quit()">C'est nul, je m'en vais</button>
+
+    <script src="nanardotron.js"></script>
+</body>
+
+</html>
