@@ -1,0 +1,179 @@
+/* ----------------------------- */
+/* ==reset */
+/* ----------------------------- */
+
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html {
+	font-size: 62.5%;
+    font-weight: bold;
+}
+body {
+    /* Dégradé "Japanese Cube" */
+    background-color: #c6c6c6;
+    background-image: linear-gradient(30deg, #f4f4f4 12%, transparent 12.5%, transparent 87%, #f4f4f4 87.5%, #f4f4f4),
+        linear-gradient(150deg, #f4f4f4 12%, transparent 12.5%, transparent 87%, #f4f4f4 87.5%, #f4f4f4),
+        linear-gradient(30deg, #f4f4f4 12%, transparent 12.5%, transparent 87%, #f4f4f4 87.5%, #f4f4f4),
+        linear-gradient(150deg, #f4f4f4 12%, transparent 12.5%, transparent 87%, #f4f4f4 87.5%, #f4f4f4),
+        linear-gradient(60deg, #9b9b9b 25%, transparent 25.5%, transparent 75%, #9b9b9b 75%, #9b9b9b), 
+        linear-gradient(60deg, #9b9b9b 25%, transparent 25.5%, transparent 75%, #9b9b9b 75%, #9b9b9b);
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    
+	color: #000;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1.4em; /* equiv 14px */
+	line-height: 1.5; /* adapt to your design */
+    margin:5px 5px 2em 20px;
+}
+
+
+/* font-sizing for content */
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details, 
+figure, 
+hgroup {
+	font-size: 1em; /* equiv 14px */
+	line-height: 1.5;
+	margin: 1.5em 0 0;
+}
+h1, .h1-like {
+    font-family: 'Permanent Marker', cursive;
+	font-size: 3em;
+	font-weight: normal;
+	line-height: 1.6154em;
+	margin: .8077em 0 0 0;
+}
+h2, .h2-like {
+    font-family: 'Permanent Marker', cursive;
+	font-size: 1.7143em; /* equiv 24px */
+	font-weight: normal;
+	line-height: 1.75em;
+	margin: .875em 0 0 0;
+}
+h3, .h3-like {
+	font-size: 1.5714em; /* equiv 22px */
+	font-weight: normal;
+	line-height: 1.909em;
+	margin: .9545em 0 0 0;
+}
+h4, .h4-like {
+	font-size: 1.4286em; /* equiv 20px */
+	font-weight: normal;
+	line-height: 1.05em;
+	margin:  1.05em 0 0 0;
+}
+h5, .h5-like {
+	font-size: 1.2857em; /* equiv 18px */
+	font-weight: normal;
+	line-height: 1.1667em;
+	margin:  1.1667em 0 0 0;
+}
+h6, .h6-like {
+	font-size: 1.1429em; /* equiv 16px */
+	font-weight: normal;
+	line-height: 1.3125em;
+	margin:  1.3125em 0 0 0;
+}
+
+/* alternate font-sizing */
+.smaller {
+	font-size: .7143em; /* equiv 10px */
+	line-height: 2.1em;
+}
+.small {
+	font-size: .8571em; /* equiv 12px */
+	line-height: 1.75em;
+}
+.big {
+	font-size: 1.1429em; /* equiv 16px */
+	line-height: 1.3125em;
+}
+.bigger {
+	font-size: 1.2857em; /* equiv 18px */
+	line-height: 1.1667em;
+}
+.biggest {
+	font-size: 1.4286em; /* equiv 20px */
+	line-height: 1.05em;
+}
+
+
+
+
+/* Boutons radio */
+/* Masquer le bouton radio d'origine */
+input[type=radio]{
+    display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+input[type=radio] + label:before {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-top: -3px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 17px;
+    height: 17px;
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+input[type=radio]:checked + label:before {
+    background: #fb8819;
+    border-color: #fb8819;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.element{
+    margin-bottom:14px;
+}
+label{
+    cursor:pointer;
+}
+</style>
+
+/* Boutons personnalisés */
+
+input[type=button], input[type=submit], input[type=reset], button, .button {
+	padding: 5px 15px;
+	margin: 3px 4px;
+	display: inline-block;
+	color: #000000;
+	font-size: 22px;
+	cursor: pointer;
+	background: #fb8819;
+	background: linear-gradient(top, #fb8819 0%, #e26f00 100%);
+	background: -moz-linear-gradient(top, #fb8819 0%, #e26f00 100%);
+	background: -webkit-linear-gradient(top, #fb8819 0%, #e26f00 100%);
+	background: -o-linear-gradient(top, #fb8819 0%, #e26f00 100%);
+	border: 1px solid #d2d2d2;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-moz-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-o-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.50);
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover, .button:hover {
+	background: linear-gradient(top, #ffa233 0%, #fb8819 100%);
+	background: -moz-linear-gradient(top, #ffa233 0%, #fb8819 100%);
+	background: -webkit-linear-gradient(top, #ffa233 0%, #fb8819 100%);
+	background: -o-linear-gradient(top, #ffa233 0%, #fb8819 100%);
+}
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active, button:active, .button:active{
+	opacity:0.8;
+}
